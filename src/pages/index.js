@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
 // styles 
 const pageStyles = {
@@ -81,12 +81,9 @@ const badgeStyle = {
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>Welcome to my party</h1>
-      <Link to="/about">About</Link>
-      <p> I'm making this by following Gastby's tutorial</p>
-    </main>
+    <Layout pageTitle="Home Page">
+      <p>I'm making this with Gatsby.</p>
+    </Layout>
   )
 }
 
